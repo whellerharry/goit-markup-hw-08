@@ -1,0 +1,45 @@
+/* section Чем мы занимаемся */
+.work {
+  padding-top: 0;
+}
+
+.work__list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.work__img {
+  display: block;
+}
+
+.work__item {
+  margin-bottom: 0;
+}
+
+.work__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* текст с плашкой на Чем мы занимаемся */
+.work__thumb {
+  position: relative;
+}
+
+.work__inf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work__desc {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: var(--title-font-weight);
+  color: var(--white-text-color);
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Веб-студия. Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="././css/main.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <!-- header  Навигация сайта -->
+      <div class="header__container container">
+        <nav class="nav">
+          <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio </a>
+          <ul class="nav__list list">
+            <li class="nav__item"><a href="./index.html" class="nav__link link">Студия</a></li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--current link">Портфолио</a>
+            </li>
+            <li class="nav__item"><a href="" class="nav__link link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="auth__list list">
+          <li class="auth__item">
+            <a href="mailto:info@devstudio.com" class="auth__link link">
+              <svg class="auth__letter" width="16" height="12">
+                <use href="./images/icons/sprite.svg#letter"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="auth__item">
+            <a href="tel:+380961111111" class="auth__link link">
+              <svg class="auth__phone" width="10" height="16">
+                <use href="./images/icons/sprite.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Портфолио -->
+    <main>
+      <section class="section">
+        <h1 class="section__title visually-hidden">Наше портфолио</h1>
+
+        <div class="container">
+          <!-- Выбор вида услуг -->
+          <ul class="btn-filter list">
+            <li class="btn-filter__item">
+              <button class="btn-filter__button" type="button">Все</button>
+            </li>
+            <li class="btn-filter__item"><button class="btn-filter__button" type="button">Веб-сайты</button></li>
+            <li class="btn-filter__item"><button class="btn-filter__button" type="button">Приложения</button></li>
+            <li class="btn-filter__item"><button class="btn-filter__button" type="button">Дизайн</button></li>
+            <li class="btn-filter__item"><button class="btn-filter__button" type="button">Маркетинг</button></li>
+          </ul>
+          <!-- Образцы работ portfolio cards -->
+          <ul class="card-set list">
+            <li class="card-set__item">
+              <a href="" class="card-set__link link">
+                <div class="card-set__thumb">
+                  <img
+                    class="card-set__img"
+                    src="./images/portfolio/tech-crack.jpg"
+                    alt="Веб-сайт Технокряк"
+                    width="370"
+                  />
+                  <div class="card-set__float">
+                    <p class="card-set__float-desc">
+                      Технокряк это засекреченная площадка распространения рептилоидного вируса. Рептилоиды используют
+                      эту платформу для цифровых атак на защищённые сервера землян.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Технокряк</h2>
+                  <p class="card-set__desc">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a href="" class="card-set__link link">
+                <div class="card-set__thumb">
+                  <img
+                    class="card-set__img"
+                    src="./images/portfolio/new-orlean.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                  />
+                  <div class="card-set__float">
+                    <p class="card-set__float-desc">
+                      Технокряк это засекреченная площадка распространения рептилоидного вируса. Рептилоиды используют
+                      эту платформу для цифровых атак на защищённые сервера землян.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card-set__desc">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a href="" class="card-set__link link">
+                <div class="card-set__thumb">
+                  <img class="card-set__img" src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood" width="370" />
+                  <div class="card-set__float">
+                    <p class="card-set__float-desc">
+                      Технокряк это засекреченная площадка распространения рептилоидного вируса. Рептилоиды используют
+                      эту платформу для цифровых атак на защищённые сервера землян.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Ресторан Seafood</h2>
+                  <p class="card-set__desc">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a href="" class="card-set__link link">
+                <div class="card-set__thumb">
+                  <img class="card-set__img" src="./images/portfolio/prime.jpg" alt="Проект Prime" width="370" />
+                  <div class="card-set__float">
+                    <p class="card-set__float-desc">
+                      Технокряк это засекреченная площадка распространения рептилоидного вируса. Рептилоиды используют
+                      эту платформу для цифровых атак на защищённые сервера землян.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Проект Prime</h2>
+                  <p class="card-set__desc">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a href="" class="card-set__link link">
+                <div class="card-set__thumb">
+                  <img class="card-set__img" src="./images/portfolio/boxes.jpg" alt="Проект Boxes" width="370" />
+                  <div class="card-set__float">
+                    <p class="card-set__float-desc">
+                      Технокряк это засекреченная площадка распространения рептилоидного вируса. Рептилоиды используют
+                      эту платформу для цифровых атак на защищённые сервера землян.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Проект Boxes</h2>
+                  <p class="card-set__desc">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a href="" class="card-set__link link">
+                <div class="card-set__thumb">
+                  <img
+                    class="card-set__img"
+                    src="./images/portfolio/inspiration.jpg"
+                    alt="Веб-сайт Inspiration has no Borders"
+                    width="370"
+                  />
+                  <div class="card-set__float">
+                    <p class="card-set__float-desc">
+                      Технокряк это засекреченная площадка распространения рептилоидного вируса. Рептилоиды используют
+                      эту платформу для цифровых атак на защищённые сервера землян.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Inspiration has no Borders</h2>
+                  <p class="card-set__desc">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a href="" class="card-set__link link">
+                <div class="card-set__thumb">
+                  <img
+                    class="card-set__img"
+                    src="./images/portfolio/limited-edition.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                  />
+                  <div class="card-set__float">
+                    <p class="card-set__float-desc">
+                      Технокряк это засекреченная площадка распространения рептилоидного вируса. Рептилоиды используют
+                      эту платформу для цифровых атак на защищённые сервера землян.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Издание Limited Edition</h2>
+                  <p class="card-set__desc">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a href="" class="card-set__link link">
+                <div class="card-set__thumb">
+                  <img class="card-set__img" src="./images/portfolio/lab.jpg" alt="Проект LAB" width="370" />
+                  <div class="card-set__float">
+                    <p class="card-set__float-desc">
+                      Технокряк это засекреченная площадка распространения рептилоидного вируса. Рептилоиды используют
+                      эту платформу для цифровых атак на защищённые сервера землян.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Проект LAB</h2>
+                  <p class="card-set__desc">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a href="" class="card-set__link link">
+                <div class="card-set__thumb">
+                  <img
+                    class="card-set__img"
+                    src="./images/portfolio/growing-business.jpg"
+                    alt="Приложение Growing Business"
+                    width="370"
+                  />
+                  <div class="card-set__float">
+                    <p class="card-set__float-desc">
+                      Технокряк это засекреченная площадка распространения рептилоидного вируса. Рептилоиды используют
+                      эту платформу для цифровых атак на защищённые сервера землян.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Growing Business</h2>
+                  <p class="card-set__desc">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__nav">
+          <a href="./index.html" class="logo logo--footer"> <span class="logo-web">Web</span>Studio </a>
+          <address class="footer__addres">
+            <a
+              class="footer__location"
+              rel="noopener noreferrer"
+              href="https://goo.gl/maps/9RtT3c9bkWaSLBwc6"
+              target="_blank"
+            >
+              г. Киев, пр-т Леси Украинки, 26
+            </a>
+            <ul class="footer__auth-list list">
+              <li class="footer__auth-item">
+                <a href="mailto:info@devstudio.com" class="footer__auth-link link">info@devstudio.com</a>
+              </li>
+              <li class="footer__auth-item">
+                <a href="tel:+380961111111" class="footer__auth-link link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Присоединяйтесь footer joining -->
+        <div class="footer__joining">
+          <h3 class="footer__joining-title">Присоединяйтесь</h3>
+          <ul class="social-icons__list list">
+            <li class="social-icons__item">
+              <a
+                href="https://www.instagram.com/"
+                class="social-icon__link social-icon__link--joining"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social-icons__svg">
+                  <use href="./images/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons__item">
+              <a
+                href="https://twitter.com/"
+                class="social-icon__link social-icon__link--joining"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social-icons__svg">
+                  <use href="./images/icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons__item">
+              <a
+                href="https://uk-ua.facebook.com/"
+                class="social-icon__link social-icon__link--joining"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social-icons__svg">
+                  <use href="./images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons__item">
+              <a
+                href="https://ua.linkedin.com/"
+                class="social-icon__link social-icon__link--joining"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social-icons__svg">
+                  <use href="./images/icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Форма на футере -->
+        <div class="footer__subscribe">
+          <h3 class="footer__joining-title">Подпишитесь на рассылку</h3>
+          <form class="footer__subscribe-form">
+            <label class="footer__subscribe-label">
+              <input
+                type="email"
+                name="email"
+                class="footer__subscribe-input"
+                required
+                autocomplete="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer__subscribe-btn">
+              Подписаться
+              <svg class="footer__subscribe-icon">
+                <use href="./images/icons/sprite.svg#planer-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

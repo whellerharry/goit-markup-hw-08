@@ -1,0 +1,45 @@
+/* Преимущества advantages section */
+.advantages__list {
+  display: flex;
+}
+
+.advantages__item {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 270px;
+}
+.advantages__item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.advantages__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+  border: 1px solid transparent;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: var(--title-font-weight);
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+}
