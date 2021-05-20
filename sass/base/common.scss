@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: 1px solid red;
+}
 body {
   font-family: var(--primary-font-family);
   font-size: var(--primary-font-size);
@@ -6,6 +12,11 @@ body {
 
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 /* reset basic styles  */
 .list {
@@ -24,6 +35,26 @@ body {
   cursor: pointer;
 }
 
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(134, 17, 17);
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(43, 219, 20);
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-color: rgb(7, 87, 207);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
 .section {
   margin-left: auto;
   margin-right: auto;

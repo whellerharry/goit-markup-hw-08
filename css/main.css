@@ -16,6 +16,13 @@
   --main-letter-spacing: 0.03em;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: 1px solid red;
+}
+
 body {
   font-family: var(--primary-font-family);
   font-size: var(--primary-font-size);
@@ -23,6 +30,12 @@ body {
   letter-spacing: var(--main-letter-spacing);
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* reset basic styles  */
@@ -41,6 +54,35 @@ body {
 
 .button {
   cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #861111;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2bdb14;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    background-color: #0757cf;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .section {
@@ -69,15 +111,6 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-/* header container */
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* header  Навигация сайта */
