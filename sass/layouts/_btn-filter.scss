@@ -1,8 +1,18 @@
 /* portfolio buttons */
 .btn-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  // margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .btn-filter__button {
@@ -30,6 +40,7 @@
   }
 }
 
-.btn-filter__item:not(:last-child) {
-  margin-right: 8px;
+.btn-filter__item {
+  margin-left: 8px;
+  margin-top: 15px;
 }
