@@ -8,10 +8,6 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
 }
 
 .advantages__item {
@@ -21,7 +17,6 @@
   }
   @media screen and (min-width: 768px) {
     width: 354px;
-    // flex-basis: calc ((100% - 2 * 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;

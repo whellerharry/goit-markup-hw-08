@@ -1,7 +1,10 @@
+html {
+  box-sizing: border-box;
+}
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   outline: 1px solid red;
 }
 body {
@@ -47,5 +50,8 @@ img {
   margin-bottom: 50px;
   text-align: center;
   font-weight: var(--title-font-weight);
-  font-size: 36px;
+  font-size: 28px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
