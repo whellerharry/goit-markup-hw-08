@@ -3,18 +3,43 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media screen and (min-width: 450px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    max-width: 1200px;
+  }
 }
-.logo--footer {
+.footer__logo {
   padding-top: 0;
   padding-bottom: 0;
+  margin: 0;
   color: var(--white-text-color);
 }
 .footer__nav {
-  margin-right: 70px;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .footer__addres {
   display: block;
@@ -39,14 +64,22 @@
 }
 
 .footer__auth-item {
-  margin-top: 9px;
+  margin-top: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
 }
 .footer__auth-link {
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
-  /* анимация footer-auth */
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,6 +93,13 @@
 }
 
 /* Присоединяйтесь footer joining */
+.footer__joining {
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
 .footer__joining-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -80,18 +120,37 @@
 
 /* Форма на футере */
 .footer__subscribe {
-  margin-left: 93px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-top: 0;
+  }
+}
 .footer__subscribe-form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .footer__subscribe-label {
-  margin-right: 12px;
+  max-width: 450px;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .footer__subscribe-input {
-  width: 358px;
+  max-width: 450px;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
   height: 50px;
   padding: 15px 16px;
   color: var(--white-text-color);
@@ -115,6 +174,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+  }
 
   font-weight: var(--title-font-weight);
   font-size: var(--secondary-font-size);
