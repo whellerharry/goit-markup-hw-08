@@ -1,5 +1,6 @@
 /* header  Навигация сайта */
 .header {
+  position: relative;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -177,4 +178,30 @@
     height: 16px;
     margin-right: 10px;
   }
+}
+/*кнопка мобильного меню*/
+
+.menu-btn {
+  display: inline-flex;
+  padding: 0;
+  margin-right: 0;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn .mobile-close {
+  display: none;
+}
+.menu-btn.is-open .mobile-close {
+  display: block;
+}
+
+.menu-btn.is-open .mobile-open {
+  display: none;
 }
