@@ -15,8 +15,12 @@
 .logo {
   display: block;
   margin-right: 88px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 480px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 88px;
     padding-top: 26px;

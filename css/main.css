@@ -138,14 +138,21 @@ img {
 .logo {
   display: block;
   margin-right: 88px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   font-weight: var(--title-font-weight);
   color: #000;
   font-size: 24px;
   line-height: 1.2;
   text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -400,8 +407,7 @@ img {
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 100%;
   max-height: 100%;
   top: 50%;
   left: 50%;
@@ -412,6 +418,20 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal__head {
   text-align: center;
   margin-top: 0;
@@ -419,12 +439,11 @@ img {
   font-family: var(--primary-font-family);
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.56;
+  line-height: 1.5;
 }
 
 .modal__text-input {
   display: block;
-  /* align-items: center; */
 }
 
 .modal__label {
@@ -507,10 +526,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  font-size: 14px;
+  margin-bottom: 20px;
+  font-size: 12px;
   line-height: 2;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__check-label {
+    font-size: 14px;
+  }
 }
 
 .modal__check {
@@ -522,7 +547,7 @@ img {
 
 .modal__check-box {
   position: absolute;
-  margin-top: 6px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   top: 0;
@@ -533,6 +558,12 @@ img {
   box-shadow: 0 0 0 2px var(--primary-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal__check-box {
+    margin-top: 6px;
+  }
+}
+
 .modal__check:checked + .modal__check-box {
   background-color: var(--accent-color);
   background-image: url(../images/icons/check-icon.svg);
@@ -540,6 +571,18 @@ img {
 
 .modal__check:focus + .modal__check-box {
   box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+.modal__contract {
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__contract {
+    margin-left: 0px;
+  }
 }
 
 .modal__link {
