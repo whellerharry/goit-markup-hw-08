@@ -2,20 +2,16 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  // background-color: rgb(194, 61, 61);
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    // background-color: rgba(169, 243, 159, 0.486);
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    // background-color: rgba(137, 175, 231, 0.527);
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    // background-color: rgba(230, 228, 127, 0.377);
   }
 }
